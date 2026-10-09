@@ -1,0 +1,33 @@
+const P = {
+  search: <><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></>,
+  bag: <><path d="M5 8h14l-1 12H6L5 8Z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></>,
+  user: <><circle cx="12" cy="8" r="4" /><path d="M4 21c1-4 4-6 8-6s7 2 8 6" /></>,
+  heart: <path d="M12 20s-7-4.4-9-9.2C1.6 7 4 4 7 4c2 0 3.5 1 5 3 1.5-2 3-3 5-3 3 0 5.400 3 4 6.800-2 4.800-9 9.200-9 9.200Z" />,
+  menu: <><path d="M4 7h16M4 12h16M4 17h16" /></>,
+  x: <path d="M6 6l12 12M18 6 6 18" />,
+  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
+  check: <path d="m5 12 5 5 9-10" />,
+  truck: <><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7" /><circle cx="7" cy="17" r="1.800" /><circle cx="17" cy="17" r="1.800" /></>,
+  shield: <path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6l-8-3Z" />,
+  return: <path d="M4 9h11a5 5 0 0 1 0 10H8M4 9l4-4M4 9l4 4" />,
+  chat: <path d="M4 5h16v11H9l-5 4V5Z" />,
+  sparkle: <path d="M12 3l1.800 5.200L19 10l-5.200 1.800L12 17l-1.800-5.200L5 10l5.200-1.800L12 3Z" />,
+  dash: <><rect x="3" y="3" width="7" height="9" /><rect x="14" y="3" width="7" height="5" /><rect x="14" y="12" width="7" height="9" /><rect x="3" y="16" width="7" height="5" /></>,
+  box: <><path d="M3 8l9-5 9 5v8l-9 5-9-5V8Z" /><path d="M3 8l9 5 9-5M12 13v8" /></>,
+  receipt: <><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z" /><path d="M9 8h6M9 12h6" /></>,
+  users: <><circle cx="9" cy="8" r="3.500" /><path d="M2 20c.8-3.500 3.500-5 7-5s6.200 1.500 7 5M16 4.500a3.500 3.500 0 0 1 0 7M18 15c2 .6 3.400 2.200 4 5" /></>,
+  tag: <><path d="M3 12V4h8l10 10-8 8L3 12Z" /><circle cx="7.500" cy="8.500" r="1.200" /></>,
+  plus: <path d="M12 5v14M5 12h14" />,
+  edit: <path d="M4 20h4L19 9l-4-4L4 16v4Z" />,
+  trash: <path d="M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13" />,
+  out: <path d="M10 4H5v16h5M16 8l4 4-4 4M20 12H9" />,
+  store: <><path d="M4 9l1-5h14l1 5" /><path d="M4 9a3 3 0 0 0 5.300 2 3 3 0 0 0 5.400 0A3 3 0 0 0 20 9M5 12v8h14v-8" /></>,
+  sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></>,
+  moon: <path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z" />,
+  portfolio: <><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" /></>,
+  upload: <path d="M12 16V4m-5 5 5-5 5 5M4 20h16" />,
+  wa: <path d="M20 12a8 8 0 0 1-11.800 7L4 20l1.100-4A8 8 0 1 1 20 12Z" />,
+};
+export default function Icon({ n, size, style }) {
+  return <svg viewBox="0 0 24 24" width={size} height={size} style={style} aria-hidden="true" stroke="currentColor" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">{P[n]}</svg>;
+}
